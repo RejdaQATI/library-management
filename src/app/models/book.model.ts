@@ -1,5 +1,5 @@
 export class Book {
-    id!: number;
+    id!: string;
     title!: string;
     author!: string;
     genre!: string;
@@ -7,10 +7,11 @@ export class Book {
     status!: string; 
     summary!: string;
     platforms!: {
-        amazon: string;
-        library: string;
+      amazon: string;
+      library: string;
     };
     chapters!: number;
-    quoteIds!: number[]; 
-    commentIds!: number[]; 
-    }
+    quoteIds!: string[];
+    commentIds!: string[];
+  }
+  

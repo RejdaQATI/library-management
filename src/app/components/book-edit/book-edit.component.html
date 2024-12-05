@@ -1,0 +1,92 @@
+<app-header></app-header>
+<div class="max-w-2xl mx-auto mt-10">
+  <h2 class="text-2xl font-bold mb-5">Modifier un Livre</h2>
+  <form (ngSubmit)="onSubmit()" [formGroup]="bookForm" class="space-y-6">
+    <div>
+      <label class="block mb-1 font-semibold">Titre</label>
+      <input
+        type="text"
+        formControlName="title"
+        class="w-full border border-gray-300 rounded px-3 py-2"
+        placeholder="Titre du livre"
+      />
+    </div>
+    <div>
+      <label class="block mb-1 font-semibold">Auteur</label>
+      <input
+        type="text"
+        formControlName="author"
+        class="w-full border border-gray-300 rounded px-3 py-2"
+        placeholder="Auteur"
+      />
+    </div>
+    <div>
+      <label class="block mb-1 font-semibold">Genre</label>
+      <input
+        type="text"
+        formControlName="genre"
+        class="w-full border border-gray-300 rounded px-3 py-2"
+        placeholder="Genre"
+      />
+    </div>
+    <div>
+      <label class="block mb-1 font-semibold">Date de Publication</label>
+      <input
+        type="date"
+        formControlName="publicationDate"
+        class="w-full border border-gray-300 rounded px-3 py-2"
+      />
+    </div>
+    <div>
+      <label class="block mb-1 font-semibold">Statut</label>
+      <select
+        formControlName="status"
+        class="w-full border border-gray-300 rounded px-3 py-2"
+      >
+        <option value="available">Disponible</option>
+        <option value="unavailable">Indisponible</option>
+      </select>
+    </div>
+    <div>
+      <label class="block mb-1 font-semibold">Résumé</label>
+      <textarea
+        formControlName="summary"
+        class="w-full border border-gray-300 rounded px-3 py-2"
+        placeholder="Résumé"
+      ></textarea>
+    </div>
+    <div>
+      <label class="block mb-1 font-semibold">Amazon</label>
+      <input
+        type="text"
+        formControlName="amazon"
+        class="w-full border border-gray-300 rounded px-3 py-2"
+        placeholder="Lien Amazon"
+      />
+    </div>
+    <div>
+      <label class="block mb-1 font-semibold">Library</label>
+      <input
+        type="text"
+        formControlName="library"
+        class="w-full border border-gray-300 rounded px-3 py-2"
+        placeholder="Lien Bibliothèque"
+      />
+    </div>
+    <div>
+      <label class="block mb-1 font-semibold">Nombre de Chapitres</label>
+      <input
+        type="text"
+        formControlName="chapters"
+        class="w-full border border-gray-300 rounded px-3 py-2"
+        placeholder="Nombre de chapitres"
+      />
+    </div>
+    <button
+      type="submit"
+      class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+    >
+      Enregistrer les modifications
+    </button>
+  </form>
+</div>

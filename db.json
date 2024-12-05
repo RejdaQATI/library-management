@@ -1,205 +1,166 @@
 {
-    "books": [
-      {
-        "id": 1,
-        "title": "The Great Gatsby",
-        "author": "F. Scott Fitzgerald",
-        "genre": "Classic",
-        "publicationDate": "1925-04-10",
-        "status": "lu",
-        "summary": "A story about the Jazz Age in the United States.",
-        "platforms": {
-          "amazon": "https://www.amazon.com",
-          "library": "https://www.local-library.com"
-        },
-        "chapters": 9,
-        "comments": [
-          {
-            "user": "Alice",
-            "comment": "Amazing book!"
-          },
-          {
-            "user": "Bob",
-            "comment": "A timeless classic."
-          }
-        ],
-        "quotes": [
-          "So we beat on, boats against the current, borne back ceaselessly into the past.",
-          "I hope she'll be a fool — that's the best thing a girl can be in this world, a beautiful little fool."
-        ]
+  "books": [
+    {
+      "title": "The Great Gatsby",
+      "author": "Mathis Petit",
+      "genre": "Classic",
+      "publicationDate": "1925-04-10",
+      "status": "unavailable",
+      "summary": "A story about the Jazz Age in the United States.",
+      "amazon": "https://www.amazon.com",
+      "library": "https://www.local-library.com",
+      "chapters": 9,
+      "platforms": {
+        "amazon": "https://www.amazon.com",
+        "library": "https://www.local-library.com"
       },
-      {
-        "id": 2,
-        "title": "1984",
-        "author": "George Orwell",
-        "genre": "Dystopian",
-        "publicationDate": "1949-06-08",
-        "status": "en cours",
-        "summary": "A chilling prophecy about the future.",
-        "platforms": {
-          "amazon": "https://www.amazon.com",
-          "library": "https://www.local-library.com"
-        },
-        "chapters": 24,
-        "comments": [
-          {
-            "user": "Charlie",
-            "comment": "Very thought-provoking."
-          }
-        ],
-        "quotes": [
-          "War is peace. Freedom is slavery. Ignorance is strength.",
-          "Big Brother is Watching You."
-        ]
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "publicationDate": "1949-06-08",
+      "status": "en cours",
+      "summary": "A chilling prophecy about the future.",
+      "platforms": {
+        "amazon": "https://www.amazon.com",
+        "library": "https://www.local-library.com"
       },
-      {
-        "id": 3,
-        "title": "To Kill a Mockingbird",
-        "author": "Harper Lee",
-        "genre": "Classic",
-        "publicationDate": "1960-07-11",
-        "status": "proposé",
-        "summary": "A young girl growing up in the racially charged South of the 1930s.",
-        "platforms": {
-          "amazon": "https://www.amazon.com",
-          "library": "https://www.local-library.com"
-        },
-        "chapters": 31,
-        "comments": [
-          {
-            "user": "Daisy",
-            "comment": "A must-read for everyone."
-          },
-          {
-            "user": "Edward",
-            "comment": "Beautiful and heartbreaking."
-          }
-        ],
-        "quotes": [
-          "You never really understand a person until you consider things from his point of view.",
-          "The one thing that doesn't abide by majority rule is a person's conscience."
-        ]
+      "chapters": 24,
+      "quoteIds": [
+        "3",
+        "4"
+      ],
+      "commentIds": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Classic",
+      "publicationDate": "1960-07-11",
+      "status": "proposé",
+      "summary": "A young girl growing up in the racially charged South of the 1930s.",
+      "platforms": {
+        "amazon": "https://www.amazon.com",
+        "library": "https://www.local-library.com"
       },
-      {
-        "id": 4,
-        "title": "Pride and Prejudice",
-        "author": "Jane Austen",
-        "genre": "Romance",
-        "publicationDate": "1813-01-28",
-        "status": "lu",
-        "summary": "A story of love and manners in 19th-century England.",
-        "platforms": {
-          "amazon": "https://www.amazon.com",
-          "library": "https://www.local-library.com"
-        },
-        "chapters": 61,
-        "comments": [
-          {
-            "user": "Fiona",
-            "comment": "Elizabeth Bennet is my hero!"
-          }
-        ],
-        "quotes": [
-          "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-          "I declare after all there is no enjoyment like reading!"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "The Catcher in the Rye",
-        "author": "J.D. Salinger",
-        "genre": "Classic",
-        "publicationDate": "1951-07-16",
-        "status": "en cours",
-        "summary": "A young man's journey through New York City as he grapples with alienation.",
-        "platforms": {
-          "amazon": "https://www.amazon.com",
-          "library": "https://www.local-library.com"
-        },
-        "chapters": 26,
-        "comments": [
-          {
-            "user": "George",
-            "comment": "Holden Caulfield is such a complex character."
-          }
-        ],
-        "quotes": [
-          "Don't ever tell anybody anything. If you do, you start missing everybody.",
-          "People always clap for the wrong things."
-        ]
-      },
-      {
-        "id": 6,
-        "title": "The Lord of the Rings: The Fellowship of the Ring",
-        "author": "J.R.R. Tolkien",
-        "genre": "Fantasy",
-        "publicationDate": "1954-07-29",
-        "status": "proposé",
-        "summary": "The beginning of an epic journey to destroy the One Ring.",
-        "platforms": {
-          "amazon": "https://www.amazon.com",
-          "library": "https://www.local-library.com"
-        },
-        "chapters": 22,
-        "comments": [
-          {
-            "user": "Helen",
-            "comment": "Absolutely epic in every way."
-          }
-        ],
-        "quotes": [
-          "Even the smallest person can change the course of the future.",
-          "Not all those who wander are lost."
-        ]
-      },
-      {
-        "id": 7,
-        "title": "The Hobbit",
-        "author": "J.R.R. Tolkien",
-        "genre": "Fantasy",
-        "publicationDate": "1937-09-21",
-        "status": "lu",
-        "summary": "The adventure of Bilbo Baggins to win a share of treasure guarded by Smaug.",
-        "platforms": {
-          "amazon": "https://www.amazon.com",
-          "library": "https://www.local-library.com"
-        },
-        "chapters": 19,
-        "comments": [
-          {
-            "user": "Ian",
-            "comment": "A fun and magical journey."
-          }
-        ],
-        "quotes": [
-          "In a hole in the ground there lived a hobbit.",
-          "Never laugh at live dragons."
-        ]
-      },
-      {
-        "id": 8,
-        "title": "The Alchemist",
-        "author": "Paulo Coelho",
-        "genre": "Adventure",
-        "publicationDate": "1988-05-01",
-        "status": "en cours",
-        "summary": "A journey of self-discovery and the pursuit of one's dreams.",
-        "platforms": {
-          "amazon": "https://www.amazon.com",
-          "library": "https://www.local-library.com"
-        },
-        "chapters": 20,
-        "comments": [
-          {
-            "user": "Jack",
-            "comment": "This book changed my life."
-          }
-        ],
-        "quotes": [
-          "When you want something, all the universe conspires in helping you to achieve it.",
-          "It's the possibility of having a dream come true that makes life interesting."
-        ]
-      }
-    ]
-  }
-  
+      "chapters": 31,
+      "quoteIds": [
+        "5",
+        "6"
+      ],
+      "commentIds": [
+        "5",
+        "6"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "bookId": "1",
+      "userId": "1",
+      "comment": "Amazing book!"
+    },
+    {
+      "id": "2",
+      "bookId": "1",
+      "userId": "2",
+      "comment": "A timeless classic."
+    },
+    {
+      "id": "3",
+      "bookId": "2",
+      "userId": "3",
+      "comment": "Very thought-provoking."
+    },
+    {
+      "id": "4",
+      "bookId": "2",
+      "userId": "4",
+      "comment": "Frightening and brilliant."
+    },
+    {
+      "id": "5",
+      "bookId": "3",
+      "userId": "5",
+      "comment": "A must-read for everyone."
+    },
+    {
+      "id": "6",
+      "bookId": "3",
+      "userId": "6",
+      "comment": "Beautiful and heartbreaking."
+    }
+  ],
+  "quotes": [
+    {
+      "id": "1",
+      "bookId": "1",
+      "quote": "So we beat on, boats against the current.",
+      "userId": "2"
+    },
+    {
+      "id": "2",
+      "bookId": "1",
+      "quote": "I hope she'll be a fool.",
+      "userId": "2"
+    },
+    {
+      "id": "3",
+      "bookId": "2",
+      "quote": "War is peace. Freedom is slavery.",
+      "userId": "2"
+    },
+    {
+      "id": "4",
+      "bookId": "2",
+      "quote": "Big Brother is Watching You.",
+      "userId": "2"
+    },
+    {
+      "id": "5",
+      "bookId": "3",
+      "quote": "You never really understand a person...",
+      "userId": "2"
+    },
+    {
+      "id": "6",
+      "bookId": "3",
+      "quote": "The one thing that doesn't abide...",
+      "userId": "2"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice"
+    },
+    {
+      "id": "2",
+      "name": "Bob"
+    },
+    {
+      "id": "3",
+      "name": "Charlie"
+    },
+    {
+      "id": "4",
+      "name": "David"
+    },
+    {
+      "id": "5",
+      "name": "Eve"
+    },
+    {
+      "id": "6",
+      "name": "Frank"
+    }
+  ]
+}

@@ -1,1 +1,28 @@
-<p>book-show works!</p>
+<div *ngIf="book; else errorOrLoading">
+    <h1>{{ book.title }}</h1>
+    <p><strong>Auteur :</strong> {{ book.author }}</p>
+    <p><strong>Genre :</strong> {{ book.genre }}</p>
+    <p><strong>Status :</strong> {{ book.status }}</p>
+    <p><strong>Résumé :</strong> {{ book.summary }}</p>
+    <p><strong>Chapitres :</strong> {{ book.chapters }}</p>
+    <p>
+      <strong>Amazon :</strong>
+      <a [href]="book.platforms.amazon" target="_blank">Acheter</a>
+    </p>
+    <p>
+      <strong>Bibliothèque :</strong>
+      <a [href]="book.platforms.library" target="_blank">Emprunter</a>
+    </p>
+    <a [routerLink]="['/books']" class="text-blue-500 hover:underline">Retour à la liste</a>
+  </div>
+  
+  <ng-template #errorOrLoading>
+    <div *ngIf="errorMessage; else loading">
+      <p class="text-red-500">{{ errorMessage }}</p>
+      <button (click)="goBack()" class="btn btn-primary">Retour</button>
+    </div>
+    <ng-template #loading>
+      <p>Chargement...</p>
+    </ng-template>
+  </ng-template>
+  
