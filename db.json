@@ -200,6 +200,205 @@
           "It's the possibility of having a dream come true that makes life interesting."
         ]
       }
+<<<<<<< Updated upstream
     ]
   }
   
+=======
+    },
+    {
+      "id": "2",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "publicationDate": "1949-06-08",
+      "status": "en cours",
+      "summary": "A chilling prophecy about the future.",
+      "platforms": {
+        "amazon": "https://www.amazon.com",
+        "library": "https://www.local-library.com"
+      },
+      "chapters": 24,
+      "quoteIds": [
+        "3",
+        "4"
+      ],
+      "commentIds": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Classic",
+      "publicationDate": "1960-07-11",
+      "status": "proposé",
+      "summary": "A young girl growing up in the racially charged South of the 1930s.",
+      "platforms": {
+        "amazon": "https://www.amazon.com",
+        "library": "https://www.local-library.com"
+      },
+      "chapters": 31,
+      "quoteIds": [
+        "5",
+        "6"
+      ],
+      "commentIds": [
+        "5",
+        "6"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "bookId": "1",
+      "userId": "1",
+      "comment": "Amazing book!"
+    },
+    {
+      "id": "2",
+      "bookId": "1",
+      "userId": "2",
+      "comment": "A timeless classic."
+    },
+    {
+      "id": "3",
+      "bookId": "2",
+      "userId": "3",
+      "comment": "Very thought-provoking."
+    },
+    {
+      "id": "4",
+      "bookId": "2",
+      "userId": "4",
+      "comment": "Frightening and brilliant."
+    },
+    {
+      "id": "5",
+      "bookId": "3",
+      "userId": "5",
+      "comment": "A must-read for everyone."
+    },
+    {
+      "id": "6",
+      "bookId": "3",
+      "userId": "6",
+      "comment": "Beautiful and heartbreaking."
+    }
+  ],
+  "quotes": [
+    {
+      "id": "1",
+      "bookId": "1",
+      "quote": "So we beat on, boats against the current.",
+      "userId": "2"
+    },
+    {
+      "id": "2",
+      "bookId": "1",
+      "quote": "I hope she'll be a fool.",
+      "userId": "2"
+    },
+    {
+      "id": "3",
+      "bookId": "2",
+      "quote": "War is peace. Freedom is slavery.",
+      "userId": "2"
+    },
+    {
+      "id": "4",
+      "bookId": "2",
+      "quote": "Big Brother is Watching You.",
+      "userId": "2"
+    },
+    {
+      "id": "5",
+      "bookId": "3",
+      "quote": "You never really understand a person...",
+      "userId": "2"
+    },
+    {
+      "id": "6",
+      "bookId": "3",
+      "quote": "The one thing that doesn't abide...",
+      "userId": "2"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice"
+    },
+    {
+      "id": "2",
+      "name": "Bob"
+    },
+    {
+      "id": "3",
+      "name": "Charlie"
+    },
+    {
+      "id": "4",
+      "name": "David"
+    },
+    {
+      "id": "5",
+      "name": "Eve"
+    },
+    {
+      "id": "6",
+      "name": "Frank"
+    }
+  ],
+  "events": [
+    {
+      "id": "2",
+      "date": "2024-12-31",
+      "time": "20:00",
+      "location": "New York, USA",
+      "bookOfTheMonthId": "2",
+      "guests": [
+        "David",
+        "Eve",
+        "Frank"
+      ],
+      "agenda": [
+        "Débat sur les thèmes dystopiques",
+        "Partage d'avis personnels"
+      ]
+    },
+    {
+      "id": "3",
+      "date": "2025-01-15",
+      "time": "17:30",
+      "location": "London, UK",
+      "bookOfTheMonthId": "3",
+      "guests": [
+        "Grace",
+        "Henry",
+        "Isabella"
+      ],
+      "agenda": [
+        "Analyse des personnages",
+        "Discussion sociale"
+      ]
+    },
+    {
+      "id": "9652",
+      "date": "2024-12-16",
+      "time": "16:11",
+      "location": "dejezhj",
+      "bookOfTheMonthId": "1",
+      "guests": [
+        "Mathis"
+      ],
+      "agenda": [
+        "discussions"
+      ]
+    }
+  ]
+}
+>>>>>>> Stashed changes

@@ -1,0 +1,61 @@
+<app-header></app-header>
+<div class="max-w-2xl mx-auto mt-10">
+  <h2 class="text-2xl font-bold mb-5">
+        {{ isEditMode ? 'Modifier un Événement' : 'Ajouter un Événement' }}
+    </h2>
+  <form [formGroup]="eventForm" (ngSubmit)="onSubmit()" class="space-y-4">
+    <div>
+        <label class="block mb-1 font-semibold">Date</label>
+        <input type="date" formControlName="date" class="w-full border border-gray-300 rounded px-3 py-2" />
+    </div>
+    <div>
+        <label class="block mb-1 font-semibold">Heure</label>
+        <input type="time" formControlName="time" class="w-full border border-gray-300 rounded px-3 py-2" />
+    </div>
+    <div>
+        <label class="block mb-1 font-semibold">Lieu</label>
+        <input
+            type="text"
+            formControlName="location"
+            class="w-full border border-gray-300 rounded px-3 py-2"
+            placeholder="Lieu"
+        />
+    </div>
+    <div>
+        <label class="block mb-1 font-semibold">Livre du Mois</label>
+        <select
+            formControlName="bookOfTheMonthId"
+            class="w-full border border-gray-300 rounded px-3 py-2"
+        >
+            <option value="" disabled selected>Sélectionnez un livre</option>
+            <option *ngFor="let book of books" [value]="book.id">
+                {{ book.title }}
+            </option>
+        </select>
+    </div>
+    <div>
+        <label class="block mb-1 font-semibold">Invités (séparés par des virgules)</label>
+        <input
+            type="text"
+            formControlName="guests"
+            class="w-full border border-gray-300 rounded px-3 py-2"
+            placeholder="Ex: Mathis, Johan"
+    />
+    </div>
+    <div>
+        <label class="block mb-1 font-semibold">Ordre du Jour (séparés par des virgules)</label>
+        <input
+            type="text"
+            formControlName="agenda"
+            class="w-full border border-gray-300 rounded px-3 py-2"
+            placeholder="Ex: Discussions"
+        />
+    </div>
+    <button
+        type="submit"
+        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+    >
+        Enregistrer
+    </button>
+  </form>
+</div>
