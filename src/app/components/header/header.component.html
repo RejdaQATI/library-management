@@ -1,0 +1,30 @@
+<header class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">
+        <a [routerLink]="['/']" class="hover:underline">Library Management</a>
+    </h1>
+        <nav class="space-x-4">
+        <a [routerLink]="['/']" class="hover:underline">
+            Home
+        </a>
+        <a
+            [routerLink]="['/books/add']"
+            class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 transition"
+        >
+            Ajoute un livre
+        </a>
+        <a
+        [routerLink]="['/events/add']"
+        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 transition"
+        >
+        Ajoute un évent
+        </a>
+        <a
+        [routerLink]="['/events']"
+        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 transition"
+        >
+        Tous les événements
+        </a>
+        </nav>
+    </div>
+</header>
