@@ -1,32 +1,57 @@
 <app-header></app-header>
 <div class="container mx-auto py-8">
-  <h1 class="text-3xl font-bold mb-4">Liste des Livres</h1>
-  <ul class="space-y-4">
-    <li *ngFor="let book of books" class="bg-white shadow p-4 rounded">
-      <h2 class="text-xl font-semibold">{{ book.title }}</h2>
-      <p class="text-gray-600"><strong>Auteur :</strong> {{ book.author }}</p>
-      <p class="text-sm text-gray-500"><strong>Genre :</strong> {{ book.genre }}</p>
-      <p class="text-sm text-gray-400"><strong>Publication :</strong> {{ book.publicationDate | date:'short' }}</p>
-      <div class="flex space-x-4 mt-4">
+    <h1 class="text-3xl font-bold mb-4">Liste des Livres</h1>
+    <div class="mb-6 grid grid-cols-2 gap-4">
+    <div>
+        <label class="block font-semibold mb-2">Cherchez par auteur :</label>
+        <input
+            type="text"
+            [(ngModel)]="authorFilter"
+            (input)="filterBooks()"
+            placeholder="Auteur"
+            class="w-full border border-gray-300 rounded px-3 py-2"
+        />
+    </div>
+    <div>
+        <label class="block font-semibold mb-2">Recherchez par genre :</label>
+    <input
+        type="text"
+        [(ngModel)]="genreFilter"
+        (input)="filterBooks()"
+        placeholder="Genre"
+        class="w-full border border-gray-300 rounded px-3 py-2"
+    />
+    </div>
+</div>
+
+<ul class="space-y-4">
+    <li *ngFor="let book of filteredBooks" class="bg-white shadow p-4 rounded">
+        <h2 class="text-xl font-semibold">{{ book.title }}</h2>
+        <p class="text-gray-600"><strong>Auteur :</strong> {{ book.author }}</p>
+        <p class="text-sm text-gray-500"><strong>Genre :</strong> {{ book.genre }}</p>
+        <p class="text-sm text-gray-400">
+        <strong>Publication :</strong> {{ book.publicationDate | date: 'short' }}
+    </p>
+    <div class="flex space-x-4 mt-4">
         <a
-          [routerLink]="['/books', book.id]"
-          class="text-blue-600 hover:underline"
+            [routerLink]="['/books', book.id]"
+            class="text-blue-600 hover:underline"
         >
-          Voir les détails
+            Voir les détails
         </a>
         <a
-          [routerLink]="['/books/edit', book.id]"
-          class="text-yellow-600 hover:underline"
+            [routerLink]="['/books/edit', book.id]"
+            class="text-yellow-600 hover:underline"
         >
-          Modifier
+            Modifier
         </a>
         <button
-          (click)="deleteBook(book.id)"
-          class="text-red-600 hover:underline"
+            (click)="deleteBook(book.id)"
+            class="text-red-600 hover:underline"
         >
-          Supprimer
+            Supprimer
         </button>
-      </div>
+        </div>
     </li>
   </ul>
 </div>

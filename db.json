@@ -1,6 +1,7 @@
 {
   "books": [
     {
+      "id": "1",
       "title": "The Great Gatsby",
       "author": "Mathis Petit",
       "genre": "Classic",
@@ -13,8 +14,8 @@
       "platforms": {
         "amazon": "https://www.amazon.com",
         "library": "https://www.local-library.com"
-      },
-      "id": "1"
+      }
+  
     },
     {
       "id": "2",
